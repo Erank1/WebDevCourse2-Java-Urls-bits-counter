@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"EranPkG","l":"inputFile"},{"p":"EranPkG","l":"Main"},{"p":"EranPkG","l":"outputFile"},{"p":"EranPkG","l":"URLCollection"},{"p":"EranPkG","l":"URLHandler"},{"p":"EranPkG","l":"URLItem"}]

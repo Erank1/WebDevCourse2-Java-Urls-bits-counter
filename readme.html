@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.getElementById('less02').style.display = "none";
+
+            function hideElement(e) {
+                e.style.display = "none";
+            }
+
+            function showElement(e) {
+                e.style.display = "block";
+            }
+            function more() {
+                hideElement(this); //hiding the button that called to the function
+                showElement(this.nextElementSibling);
+                showElement(this.nextElementSibling.nextElementSibling);
+
+                var child = this.parentElement.parentElement.parentElement.parentElement.children;
+
+            }
+            function less() {
+                    hideElement(this);
+                    showElement(this.previousElementSibling);
+                    hideElement(this.nextElementSibling);
+
+            }
+
+            document.getElementById('more02').addEventListener('click', more);
+            document.getElementById('less02').addEventListener('click', less);
+
+        });
+
+    </script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-2 mt-3"><img src="http://cs.hac.ac.il/design/hadassah-logo.png" class="img-thumbnail"></div>
+        <div class="col-9 alert alert-warning mt-3"><h2>Eran README template</h2></div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3 h-50" style="background-color:lavender;">
+            <h2>Internet course</h2>
+            <ul>
+                <li>Hadassah Academic College</li>
+                <li>Year: 2019-20</li>
+                <li>Semester: B</li>
+            </ul>
+            <hr>
+            <a href="https://mowgli.hac.ac.il/course/view.php?id=12895" target="_blank" class="btn btn-outline-primary" role="button">Enter the site from here</a>
+
+        </div>
+
+
+        <div class="col-sm-3 col-mt-2">
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.macphun.com/img/uploads/customer/how-to/579/15531840725c93b5489d84e9.43781620.jpg" class="card-img-top" alt="hmmm">
+                <div class="card-body">
+                    <h5 class="card-title">Eran Reuven</h5>
+                    <p id="lesscontent02" class="card-text">Email: eranrvn@gmail.com <br> ID: 205410848</p>
+                    <button id="more02" class="btn btn-primary">Show More</button>
+                    <button id="less02" class="btn btn-primary">Show Less</button>
+                    <p id="more-content-02" style="display:none">My name is Eran Reuven, I am a computer science student.
+                        <br>I love go to the gym and go out with friends.<br>My profession is Graphic Design and I have a private business with a partner. We build websites, design logos, banners, stickers and more. Also, promoting businesses.<br></p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h1>Readme for ex1</h1>
+            <p>In this exercise we asked to create a java project that gets from the arguments vector two file names,
+            input and output files. the program gets input file that contain list of urls, and it print to the output
+            file all the valid urls sort by number of bytes of the url content.</p> <hr>
+                <h4>JavaDoc API</h4>
+                        <li><a href="./api/index.html" target="_blank">Click here to open the JavaDoc </a> </li> <hr>
+
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
